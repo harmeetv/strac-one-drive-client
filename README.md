@@ -8,6 +8,11 @@ Strac-One-Drive is a modern web application designed to enhance file management 
 - **File Operations**: Download files directly from the interface.
 - **Real-time User Access Updates**: Stay informed about who has access to your files with real-time updates. See changes in user permissions and track collaboration in real-time, ensuring secure and efficient file management.
 
+## Playground
+
+Try out Strac-One-Drive in our online playground:
+[https://d3c9bus8ylxft2.cloudfront.net/](https://d3c9bus8ylxft2.cloudfront.net/)
+
 ## Getting Started
 
 Follow these steps to set up a local copy of the project.
