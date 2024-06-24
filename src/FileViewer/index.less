@@ -1,0 +1,117 @@
+/* src/FileViewer.css */
+.file-viewer {
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    .breadcrumb-path {
+      display: flex;
+      align-items: center;
+      .breadcrumb-separator {
+        margin: 0 8px;
+        color: #4a4a4a;
+      }
+    }
+  }
+  .ReactVirtualized__Table {
+    border-collapse: collapse;
+    width: 100%;
+    .ReactVirtualized__Table__headerRow {
+      display: flex;
+      align-items: center;
+      background-color: #f3f3f3;
+      border-bottom: 1px solid #ddd;
+      .ReactVirtualized__Table__headerColumn {
+        padding: 8px;
+        text-align: left;
+        font-weight: bold;
+      }
+    }
+    .ReactVirtualized__Table__Grid {
+      border-bottom: 1px solid #ddd;
+      .ReactVirtualized__Table__row {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        .ReactVirtualized__Table__rowColumn {
+          padding: 8px;
+          .file-name {
+            display: flex;
+            align-items: center;
+            .file-icon {
+              margin-right: 8px;
+              display: inline-block;
+            }
+            span {
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          .file-permissions {
+            .user-container {
+              display: flex;
+              gap: 8px;
+            }
+            .user-circle {
+              cursor: pointer;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+            }
+            .initials {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              background-color: #007bff;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 16px;
+            }
+          }
+          .file-download {
+            button {
+              background-color: #007bff;
+              color: white;
+              border: none;
+              border-radius: 3px;
+              padding: 8px;
+              cursor: pointer;
+              &:hover {
+                background-color: #0056b3;
+              }
+              &:focus {
+                outline: none;
+              }
+              &:active {
+                background-color: #0056b3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* make span link like */
+  .link-like {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: darkblue;
+    }
+    &:focus {
+      outline: none;
+      text-decoration: underline;
+    }
+    &:active {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 40px);
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+header .logo {
+  font-size: 24px;
+}
+header .logout, header .login {
+  cursor: pointer;
+  background-color: #f44336;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+main {
+  margin-top: 60px;
+  padding: 20px;
+  flex: 1;
+}
