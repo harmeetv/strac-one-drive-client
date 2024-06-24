@@ -3,9 +3,9 @@ import { PublicClientApplication } from "@azure/msal-browser";
 
 const msalConfig = {
   auth: {
-    clientId: import.meta.env.REACT_APP_ONEDRIVE_CLIENT_ID, // Replace with your client ID
+    clientId: import.meta.env.VITE_REACT_APP_ONEDRIVE_CLIENT_ID, // Replace with your client ID
     authority: "https://login.microsoftonline.com/Common",
-    redirectUri: import.meta.env.REACT_APP_ONEDRIVE_REDIRECT_URI
+    redirectUri: import.meta.env.VITE_REACT_APP_ONEDRIVE_REDIRECT_URI
   },
 };
 
