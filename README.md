@@ -40,8 +40,8 @@ https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-ap
    npm install
 4. Set up environment variables: Create a .env file in the root directory and add your OneDrive API credentials:
    ```sh
-   REACT_APP_ONEDRIVE_CLIENT_ID=your_client_id
-   REACT_APP_ONEDRIVE_REDIRECT_URI=your_redirect_uri
+   VITE_REACT_APP_ONEDRIVE_CLIENT_ID=your_client_id
+   VITE_REACT_APP_ONEDRIVE_REDIRECT_URI=your_redirect_uri
 5. To start the development server:
    ```
    npm run dev
