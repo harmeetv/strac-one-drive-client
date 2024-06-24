@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 
-const isDevelopmentRun = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+// const isDevelopmentRun = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 // uncomment next expression if you use Vite for building
 // second condition is added to ensure we are not in the test environment 
 // as the @testing-library/react 'render' renders the component once
-// const isDevelopmentRun = import.meta.env.DEV && import.meta.env.MODE !== 'test';
+const isDevelopmentRun = import.meta.env.DEV && import.meta.env.MODE !== 'test';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const useLegacyEffect = (cb: () => any, deps: any[]) => {
