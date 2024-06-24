@@ -98,7 +98,7 @@ const FileViewer: React.FC = () => {
           const a = document.createElement('a');
           a.style.display = 'none';
           a.href = url;
-          a.download = fileId; // You can set a custom filename here if you want
+          a.download = files?.find(file => file.id === fileId)?.name ?? fileId;
           document.body.appendChild(a);
           a.click();
           window.URL.revokeObjectURL(url);
