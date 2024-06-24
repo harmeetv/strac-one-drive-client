@@ -14,7 +14,7 @@ Follow these steps to set up a local copy of the project.
 
 ### Prerequisites
 
-- Node.js (LTS version recommended)
+- Node.js (version 18 or higher)
 - npm (comes with Node.js)
 - Microsoft Azure account
 - Registered Azure application
