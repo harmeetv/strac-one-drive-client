@@ -17,7 +17,7 @@ Follow these steps to set up a local copy of the project.
 - Node.js (LTS version recommended)
 - npm (comes with Node.js)
 - Microsoft Azure account
-- Registered Azure application with OneDrive API permissions
+- Registered Azure application
 
 For instructions on how to register an Azure application, please refer to the official Microsoft documentation:
 https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate
