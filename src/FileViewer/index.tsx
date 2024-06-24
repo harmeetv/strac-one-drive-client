@@ -128,20 +128,24 @@ const FileViewer: React.FC = () => {
     }
 
     useLegacyEffect(() => {
+        const fetchPermissionsForVisibleFiles = () => {
+          if (!shownIndicesRange) return;
+          for (let i = shownIndicesRange[0]; i <= shownIndicesRange[1]; i++) {
+              const file = files[i];
+              if (file) {
+                  fetchFilePermissions(file.id).then(({ fileId, permissions }) => {
+                      setPermissions(prevPermissions => ({
+                          ...prevPermissions,
+                          [fileId]: permissions
+                      }));
+                  });
+              }
+          }
+        }
+        fetchPermissionsForVisibleFiles();
         const interval = setInterval(() => {
             if (accessToken) {
-                if (!shownIndicesRange) return;
-                for (let i = shownIndicesRange[0]; i <= shownIndicesRange[1]; i++) {
-                    const file = files[i];
-                    if (file && !permissions[file.id]) {
-                        fetchFilePermissions(file.id).then(({ fileId, permissions }) => {
-                            setPermissions(prevPermissions => ({
-                                ...prevPermissions,
-                                [fileId]: permissions
-                            }));
-                        });
-                    }
-                }
+              fetchPermissionsForVisibleFiles();
             }
         }, 5000);
         return () => clearInterval(interval);
